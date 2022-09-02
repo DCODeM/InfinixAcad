@@ -5,6 +5,9 @@
 body{
     background: #2c3e50;
     justify-content: center;
+    justify-content: center;
+    align-self: center;
+    margin: auto 10vw;
 }
 
 *{
@@ -157,4 +160,115 @@ nav a:nth-child(5):hover~.animation{
     background:radial-gradient(100.18% 488.14% at 50% 50%, rgba(109, 212, 196, 0) 23.23%, rgba(77, 235, 212, 0.365) 85.73%);  
     justify-content: center;
     align-self: center;
+}
+
+
+/*------------Contact-US-----------*/
+
+.contact p{
+  font-size: 2rem;
+  margin: 2rem 0rem; 
+}
+
+.contact h1{
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+
+/* grid for form */
+/*
+.item1 { grid-area: name; }
+.item2 { grid-area: nameInput; }
+.item3 { grid-area: mail; }
+.item4 { grid-area: mailInput; }
+.item5 { grid-area: question; }
+.item6 { grid-area: questionInput; }
+.item7 { grid-area: submit; }
+
+.grid_container {
+display: grid;
+grid-template-areas:
+  'name name nameInput nameInput nameInput nameInput'
+  'mail mail mailInput mailInput mailInput mailInput'
+  'question question questionInput questionInput questionInput questionInput'
+  'submit submit submit submit submit submit';
+gap: 10px;
+
+padding: 10px;
+} */
+
+.submitform{
+  margin: 3vh auto;
+  width: 40%;
+  
+}
+
+
+.contact_flexo{
+  display: flex;
+  margin-top: 2vh;
+  justify-content : space-around;
+  align-items : center;
+}
+
+.grid-container > label {
+background-color: rgba(255, 255, 255, 0.25);
+text-align: center;
+padding: 20px 0;
+font-size: 30px;
+}
+.grid-container > input
+{
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  min-height: 30vh;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+input[type=text]{
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.item6{
+  min-height: 20vh;
+}
+.inputform{
+  max-width: 70%;
+}
+
+
+/* contact update css*/
+form label{
+  margin: 8px auto 8px 20px;
+  font-size: 1.5rem;
+}
+input[type=text], select {
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 8px 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #57D9CD;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px auto;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  transform: scale(1.1);
+  transition: 0.3s;      /*Specify afterwards */
 }
