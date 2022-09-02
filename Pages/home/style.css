@@ -4,7 +4,27 @@
 }
 body{
     background: #2c3e50;
+    justify-content: center;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+body{
+   /*Specify which one*/
+     color: #fff;
+}
+.middle{ 
+min-height: 100vh;
+width: 100%;
+margin: 0 auto; 
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* -----------------NAVBAR---------------------------------*/
 nav{
     position: relative;
     margin:  auto ;
@@ -39,40 +59,102 @@ nav .animation{
 }
 
 nav a:nth-child(1){
-    width: 100px;
+    width: 20%;
 }
 nav .start_home, a:nth-child(1):hover~.animation{
-    width: 100px;
+    width: 20%;
     left: 0;
 }
 nav a:nth-child(2){
-    width : 110px;
+    width : 20%;
 }
 nav a:nth-child(2):hover~.animation{
-    width: 110px;
-    left: 100px;
+    width: 20%;
+    left: 20%;
 }
 
 nav a:nth-child(3){
-    width : 100px;
+    width : 20%;
 }
 nav a:nth-child(3):hover~.animation{
-    width: 110px;
-    left: 210px;
+    width: 20%;
+    left: 40%;
 }
 
 nav a:nth-child(4){
-    width : 160px;
+    width : 20%;
 }
 nav a:nth-child(4):hover~.animation{
-    width: 160px;
-    left: 310px;
+    width: 20%;
+    left: 60%;
 }
 
 nav a:nth-child(5){
-    width : 120px;
+    width : 20%;
 }
 nav a:nth-child(5):hover~.animation{
-    width: 120px;
-    left: 470px;
+    width: 20%;
+    left: 80%;
+}
+
+/* -----------------NAVBAR END---------------------------------*/
+/* -----------------LOGO and text start ---------------------------------*/
+  img{
+     height: 20vh;
+    }
+
+  .head {
+    display: flex;
+    background-color: black;
+    min-height: 90vh;
+
+  }
+  .head > div {
+    width: 50vw;
+    text-align: left;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  .headText{
+    margin: 2vh auto;
+  }
+  .headText h1{
+    padding: 10px;
+  }
+  .headTextdiv{
+    padding: 15%;
+    margin: 0 auto;
+  }
+
+  .purple{
+    color : purple;
+  }
+  .green{
+    color: rgb(85, 220, 85);
+  }
+  .red{
+    color: #cd4040;
+  }
+  
+  .headImage img{
+    height: 100%;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+  }
+  /* -----------------logo and text end---------------------------------*/
+
+
+/* -----------------BLock1---------------------------------*/
+/* Middle class */ 
+.Block1{
+  /*#256D85;*/
+    margin: 5vh auto;
+    width: 80vw;
+    height: 40vh;
+    border-radius: 20px;
+    background:radial-gradient(100.18% 488.14% at 50% 50%, rgba(109, 212, 196, 0) 23.23%, rgba(77, 235, 212, 0.365) 85.73%);  
+    justify-content: center;
+    align-self: center;
 }
