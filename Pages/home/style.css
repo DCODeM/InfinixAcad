@@ -1,14 +1,22 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background: #2c3e50;
-    justify-content: center;
-    justify-content: center;
-    align-self: center;
-    margin: auto 10vw;
-}
+/* #5395fd - text
+#0d11a5  text- dark
+# - navbar background
+161b22#0d1117 - background
+#262b34 - background1 border color
+#f3f3f4 - white text
+#adadb1 - white text dim
+#09091a - background1
+#171722 - background 2
+#30363d - button separate background/color(--)
+
+#2c3e50- previous background
+#34495e; - "-"    navbar 
+
+
+for centering any div or section 
+use
+margin : auto 10vw;
+*/
 
 *{
   margin: 0;
@@ -16,9 +24,14 @@ body{
   box-sizing: 0;
 }
 body{
-   /*Specify which one*/
-     color: #fff;
+    background: #0d1117;
+    justify-content: center;
+    justify-content: center;
+    align-self: center;
+    color: #fff;
+    
 }
+
 .middle{ 
 min-height: 100vh;
 width: 100%;
@@ -27,13 +40,17 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
+
+.Landingpage{
+  margin: auto 5vw;
+}
 /* -----------------NAVBAR---------------------------------*/
 nav{
     position: relative;
     margin:  auto ;
-    width: 80vw;
+    width: 100%;
     height: 10vh;
-    background: #34495e;
+    background: #161b22;
     border-radius: 8px;
     font-size: 0;
     box-shadow: 0 2px 3px 0 rgba(0, 0,0,.1);
@@ -271,4 +288,22 @@ input[type=submit] {
 input[type=submit]:hover {
   transform: scale(1.1);
   transition: 0.3s;      /*Specify afterwards */
+}
+
+
+
+/*----------------------------------EVENTS-----------------------------*/
+.section_events{
+  background: #09091a ;
+  margin: 5vh auto;
+}
+
+.events_head{
+  background: yellow;
+}
+
+.events_head h1{
+  min-height: 20vh;
+  text-align: center;
+  justify-self:  ;
 }
